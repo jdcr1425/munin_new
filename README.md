@@ -1,5 +1,10 @@
 # Instalacion munin
 
+Infraestructura
+
+https://github.com/jdcr1425/munin_new/blob/master/Untitled%20Diagram.png?raw=true
+
+
 Implementación
 
 1) Primero se accede a la carpeta inicio por medio de la terminal y sigue las instrucciones.
