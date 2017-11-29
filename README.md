@@ -2,7 +2,7 @@
 
 Infraestructura
 
-https://github.com/jdcr1425/munin_new/blob/master/Untitled%20Diagram.png?raw=true
+![GitHub Logo](https://github.com/jdcr1425/munin_new/blob/master/Untitled%20Diagram.png?raw=true)
 
 
 Implementación
