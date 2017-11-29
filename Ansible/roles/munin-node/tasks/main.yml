@@ -43,15 +43,31 @@
   with_items: "{{ munin_node_plugins_disabled }}"
   notify: restart munin-node
 
+
+- name: delete prior index.html
+  file: path="/var/www/html/index.html" owner="root" group="root" state=absent
+
+- name: Copy index.html
+  template:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+    owner: root
+    group: root
+    mode: 0644
+  with_items:
+    - src: index.html
+      dest: "/var/www/html/index.html"
+
+
 - name: Create munin www directory
-  file: path="/var/www/html/munin" owner="munin" group="munin" state=directory
+  file: path="/var/www/munin" owner="munin" group="munin" state=directory
 
 
 - name: ddd
-  command: chmod -R 755 /var/www/html/munin
+  command: chmod -R 755 /var/www/munin
 
 - name: dddd
-  command: chown munin:munin /var/www/html/munin
+  command: chown munin:munin /var/www/munin
 
 - name: permisos munin www directory
   file:
