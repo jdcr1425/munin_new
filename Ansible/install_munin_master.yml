@@ -3,4 +3,4 @@
     hosts: webM
     remote_user: root
     roles:
-     - munin-master
+     - ansible-master
