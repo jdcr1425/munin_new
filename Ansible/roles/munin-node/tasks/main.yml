@@ -59,10 +59,6 @@
       dest: "/var/www/html/index.html"
 
 
-- name: Create munin www directory
-  file: path="/var/www/munin" owner="munin" group="munin" state=directory
-
-
 - name: ddd
   command: chmod -R 755 /var/www/munin
 
@@ -71,7 +67,7 @@
 
 - name: permisos munin www directory
   file:
-    path: "/var/www/html/munin"
+    path: "/var/www/munin"
     state: touch
     mode: "u=rw,g=r,o=r"
 
