@@ -30,7 +30,7 @@ munin_max_processes: 12
 munin_hosts:
   - {
     name: "localhost",
-    address: "127.0.0.1",
+    address: "127.0.0.1:80",
     extra: ["use_node_name yes"]
   }
 
