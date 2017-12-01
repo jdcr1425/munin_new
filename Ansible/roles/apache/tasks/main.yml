@@ -26,7 +26,17 @@
 
   command: apt-get install -y libcgi-fast-perl libapache2-mod-fcgid
 
-
+- name: Copy index.html
+  template:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+    owner: root
+    group: root
+    mode: 0644
+  with_items:
+    - src: index.html
+      dest: "/var/www/html/index.html"
+      
 - name: Iniciando servicio Apache
   service:
     name: apache2
