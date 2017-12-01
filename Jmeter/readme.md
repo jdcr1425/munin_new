@@ -38,4 +38,10 @@ Usaremos Ansible para instalarlo, usaremos el rol apache y lo instalaremos con e
 
 ![GitHub Logo](https://github.com/jdcr1425/munin_new/blob/master/imgs/1usuario10.png?raw=true)
 
+##### 1 usuario 100 peticiones
+
+![GitHub Logo](https://github.com/jdcr1425/munin_new/blob/master/imgs/1usuario100.png?raw=true)
+
+
+
 
